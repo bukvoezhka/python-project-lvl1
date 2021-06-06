@@ -1,0 +1,12 @@
+name: linter-check
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: WPS Linter Check
+        run: make lint
