@@ -2,6 +2,7 @@ name: linter-check
 
 on:
   push:
+  pull:
 
 jobs:
   build:
