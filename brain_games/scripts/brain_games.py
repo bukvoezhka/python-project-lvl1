@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
+"""Main game module."""
 from brain_games.cli import welcome_user
 
 
 def main():
-    print('Welcome to the Brain Games!')
+    """Player greeting."""
+    print('Welcome to the Brain Games!')  ## noqa WPS421
     welcome_user()
 
 
