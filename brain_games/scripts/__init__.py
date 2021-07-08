@@ -1,1 +1,1 @@
-"""Game script module."""
+"""Module of game scripts."""
