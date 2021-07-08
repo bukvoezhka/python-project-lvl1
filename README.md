@@ -7,5 +7,5 @@
 ### WPS linter status:
 ![](https://github.com/bukvoezhka/python-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
 
-Brain Even Game
-https://asciinema.org/a/tRNqc6078VM89sENGP6ZSHEl6
+### Brain Even Game:
+[![asciicast](https://asciinema.org/a/tRNqc6078VM89sENGP6ZSHEl6.svg)](https://asciinema.org/a/tRNqc6078VM89sENGP6ZSHEl6)
