@@ -8,4 +8,7 @@
 ![](https://github.com/bukvoezhka/python-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
 
 ### Brain Even Game:
-[![asciicast](https://asciinema.org/a/tRNqc6078VM89sENGP6ZSHEl6.svg)](https://asciinema.org/a/tRNqc6078VM89sENGP6ZSHEl6)
+[![asciicast](https://asciinema.org/a/Eylmi9Es9p8NGg6yHjpoQJs9w.svg)](https://asciinema.org/a/Eylmi9Es9p8NGg6yHjpoQJs9w)
+
+### Brain Calc Game:
+[![asciicast](https://asciinema.org/a/WMWGTqNPUDkIbS8C4t9xSytiG.svg)](https://asciinema.org/a/WMWGTqNPUDkIbS8C4t9xSytiG)
