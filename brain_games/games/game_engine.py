@@ -22,16 +22,12 @@ def game_session(game_func, check_func, name):
         check_func: function for verification player answer
         name: username of player
     """
-    count = 0
-    while count < 3:
+    for _ in range(0, 3):
         game_value = game_func()
         print('Question: {0}'.format(game_value))
         player_answer = prompt.string('Your answer: ')
         answer = check_func(game_value)
-        if player_answer == answer:
-            print('Correct!')
-            count += 1
-        else:
+        if player_answer != answer:
             print(
                 "'{0}' is wrong answer ;(. Correct answer was '{1}'".format(
                     player_answer, answer,
@@ -39,5 +35,5 @@ def game_session(game_func, check_func, name):
             )
             print("Let's try again, {0}!".format(name))
             break
-        if count == 3:
-            print('Congratulations, {0}!'.format(name))
+        print('Correct!')
+    print('Congratulations, {0}!'.format(name))
