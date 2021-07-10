@@ -2,31 +2,24 @@
 import prompt
 
 
-def get_username():
-    """Greets player and gets his name.
-
-    Returns:
-        username for game session.
+def game_session(game_func, verify_func, game_rule):
     """
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
-    return name
-
-
-def game_session(game_func, check_func, name):
-    """
-    Create a game session for all of brain games modules.
+    Create a 3-round game session for all of brain games modules.
 
     Args:
         game_func: main game function of chosen module
-        check_func: function for verification player answer
-        name: username of player
+        verify_func: function for verification player answer
+        game_rule: current rule of game session.
     """
-    for _ in range(0, 3):
+    name = prompt.string('May I have your name? ')
+    print('Hello, {0}!'.format(name))
+    print(game_rule)
+    game_round = range(3)
+    for _ in game_round:
         game_value = game_func()
         print('Question: {0}'.format(game_value))
         player_answer = prompt.string('Your answer: ')
-        answer = check_func(game_value)
+        answer = verify_func(game_value)
         if player_answer != answer:
             print(
                 "'{0}' is wrong answer ;(. Correct answer was '{1}'".format(
@@ -36,4 +29,5 @@ def game_session(game_func, check_func, name):
             print("Let's try again, {0}!".format(name))
             break
         print('Correct!')
-    print('Congratulations, {0}!'.format(name))
+    else:
+        print('Congratulations, {0}!'.format(name))
