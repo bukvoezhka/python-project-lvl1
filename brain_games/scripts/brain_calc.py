@@ -1,12 +1,10 @@
 """Brain-calc game."""
-from brain_games.games.game_calc import brain_calc, find_result
-from brain_games.games.game_engine import game_session
+from brain_games.games import calc, engine
 
 
 def main():
-    """Brain calculation game."""
-    game_rule = 'What is the result of the expression?'
-    game_session(brain_calc, find_result, game_rule)
+    """Start brain-calc game."""
+    engine.run_game(calc)
 
 
 if __name__ == '__main__':

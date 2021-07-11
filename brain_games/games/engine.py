@@ -1,25 +1,23 @@
 """Common engine for Brain game."""
 import prompt
 
+GAME_ROUND = range(3)
 
-def game_session(game_func, verify_func, game_rule):
+
+def run_game(brain_game):
     """
     Create a 3-round game session for all of brain games modules.
 
     Args:
-        game_func: main game function of chosen module
-        verify_func: function for verification player answer
-        game_rule: current rule of game session.
+        brain_game: game module of choosen game.
     """
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
-    print(game_rule)
-    game_round = range(3)
-    for _ in game_round:
-        game_value = game_func()
-        print('Question: {0}'.format(game_value))
+    print(brain_game.GAME_RULES)
+    for _ in GAME_ROUND:
+        question, answer = brain_game.main()
+        print('Question: {0}'.format(question))
         player_answer = prompt.string('Your answer: ')
-        answer = verify_func(game_value)
         if player_answer != answer:
             print(
                 "'{0}' is wrong answer ;(. Correct answer was '{1}'".format(
