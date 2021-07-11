@@ -5,7 +5,7 @@
 <a href="https://codeclimate.com/github/bukvoezhka/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/987287e06497fe26bc38/maintainability" /></a>
 
 ### WPS linter status:
-![](https://github.com/bukvoezhka/python-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
+[![Linter Status](https://github.com/bukvoezhka/python-project-lvl1/actions/workflows/linter-check.yml/badge.svg)](https://github.com/bukvoezhka/python-project-lvl1/actions/workflows/linter-check.yml)
 
 ### Brain Even Game:
 [![asciicast](https://asciinema.org/a/Eylmi9Es9p8NGg6yHjpoQJs9w.svg)](https://asciinema.org/a/Eylmi9Es9p8NGg6yHjpoQJs9w)
@@ -18,7 +18,6 @@
 
 ### Brain Progression Game:
 [![asciicast](https://asciinema.org/a/rbzIZhOOniSDYoKiQqNW06J4f.svg)](https://asciinema.org/a/rbzIZhOOniSDYoKiQqNW06J4f)
-
 
 ### Brain Prime Game:
 [![asciicast](https://asciinema.org/a/ZwUDqgnKEDIfm3LYQs0WEFY8X.svg)](https://asciinema.org/a/ZwUDqgnKEDIfm3LYQs0WEFY8X)
