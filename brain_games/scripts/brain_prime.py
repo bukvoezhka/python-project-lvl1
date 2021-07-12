@@ -1,5 +1,6 @@
 """Brain prime game."""
-from brain_games.games import engine, prime
+from brain_games import engine
+from brain_games.games import prime
 
 
 def main():

@@ -3,18 +3,21 @@ from random import randint
 
 GAME_RULES = 'Find the greatest common divisor of given numbers.'
 
+START_RANGE = 1
+END_RANGE = 100
 
-def main():
+
+def start_round():
     """
     Generate a random expression and answer for game.
 
     Returns:
-        exrpession to solve and answer on it.
+        exrpession to solve and answer on game.
     """
-    num1 = randint(1, 50)
-    num2 = randint(1, 50)
-    question = '{0} {1}'.format(num1, num2)
-    answer = get_gcd(num1, num2)
+    number1 = randint(START_RANGE, END_RANGE)
+    number2 = randint(START_RANGE, END_RANGE)
+    question = '{0} {1}'.format(number1, number2)
+    answer = get_gcd(number1, number2)
     return question, answer
 
 

@@ -1,7 +1,7 @@
 """Common engine for Brain game."""
 import prompt
 
-GAME_ROUND = range(3)
+GAME_ROUNDS = 3
 
 
 def run_game(brain_game):
@@ -11,11 +11,12 @@ def run_game(brain_game):
     Args:
         brain_game: game module of choosen game.
     """
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
     print(brain_game.GAME_RULES)
-    for _ in GAME_ROUND:
-        question, answer = brain_game.main()
+    for _ in range(GAME_ROUNDS):
+        question, answer = brain_game.start_round()
         print('Question: {0}'.format(question))
         player_answer = prompt.string('Your answer: ')
         if player_answer != answer:

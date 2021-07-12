@@ -1,5 +1,6 @@
 """Brain greatest common divisor game."""
-from brain_games.games import engine, gcd
+from brain_games import engine
+from brain_games.games import gcd
 
 
 def main():

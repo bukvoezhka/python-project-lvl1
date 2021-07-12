@@ -4,17 +4,19 @@ from random import randint
 
 GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+START_RANGE = 1
+END_RANGE = 100
 
-def main():
+
+def start_round():
     """
-    Generate random number.
+    Generate game data.
 
     Returns:
         integer for game session and answer on game.
     """
-    question = randint(1, 100)
-    answer = is_prime(question)
-    return question, answer
+    number = randint(START_RANGE, END_RANGE)
+    return number, is_prime(number)
 
 
 def is_prime(number):
