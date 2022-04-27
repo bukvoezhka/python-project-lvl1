@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Brain progression game."""
 from brain_games import engine
 from brain_games.games import progression
